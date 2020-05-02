@@ -21,7 +21,7 @@ Get your GeoLite2-Country.mmdb file which can be obtained by going [here](https:
 ## Extract fail2ban logs in a CSV file
 
 ```bash
-$ ./fail2ban-getlog.py log.csv
+$ ./fail2ban-getlog log.csv
 ```
 You should create a cron task to regulary run `/.fail2ban-getlog log.csv` to update the log file as ban events occur as the fail2ban log files are rotated.
 
