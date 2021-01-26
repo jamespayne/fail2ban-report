@@ -79,7 +79,7 @@ def generate_report(f_log, f_country, f_pdf):
     pp.close()
 
 if len(argv) != 4:
-    print("Usage: fail2ban-report <fail2ban.csv> <GeoLite2-Country.mmdb> <report.pdf>")
+    print("Usage: fail2ban-report.py <fail2ban.csv> <GeoLite2-Country.mmdb> <report.pdf>")
     print("Compute fail2ban CSV file and generate PDF report.")
 else:
     generate_report(argv[1], argv[2], argv[3])
